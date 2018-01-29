@@ -1,0 +1,246 @@
+*{
+  margin:0px;
+  padding:0px;
+}
+#app{
+  background: url(../img/bg.jpg) no-repeat center top;
+  width: 640px;
+  background-color: #20110e;
+}
+.container {
+  height: 2750px;
+}
+input:-ms-input-placeholder{
+    color: #aea39a;opacity:1;
+
+}
+
+input::-webkit-input-placeholder{
+    color: #aea39a;opacity:1;
+
+}
+input[type="button"]{
+  -webkit-appearance: none;
+}
+#cover {
+  position: fixed;
+  z-index: 1;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background-color: #000;
+}
+#cover2 {
+  position: fixed;
+  z-index: 101;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background-color: #000;
+}
+.dialog{
+  height: 334px;
+  padding-top: 1222px;
+}
+.left{
+  width: 37px;
+  height: 55px;
+  position: absolute;
+  left: 128px;
+  top: 663px;
+}
+.right{
+  width: 37px;
+  height: 55px;
+  position: absolute;
+  right: 113px;
+  top: 663px;
+}
+.yuyue_phone{
+  width: 391px;
+  margin: 0 auto;
+}
+.telephone{
+  background: url(../img/phone.png) no-repeat center top;
+  width: 391px;
+  height: 48px;
+  font-size: 18px;
+  border: none;
+  text-align: center;
+  outline: none;
+  color: #aea39a;
+  margin-top: 30px;
+}
+.code{
+  background: url(../img/yanzhengma.png) no-repeat center top;
+  width: 261px;
+  height: 48px;
+  font-size: 18px;
+  text-align: center;
+  outline: none;
+  color: #aea39a;
+  border: none;
+  margin-top: 16px;
+}
+.yanzheng{
+  background: url(../img/huoqu.png) no-repeat center top;
+  width: 121px;
+  height: 48px;
+  color: #8c7129;
+  font-size: 18px;
+  outline: none;
+  text-align: center;
+  border: none;
+  margin-top: 16px;
+}
+.yyyx{
+  background: url(../img/button.png) no-repeat center top;
+  width: 239px;
+  height: 96px;
+  font-size: 16px;
+  color: #fff;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 28px;
+}
+.xitong{
+    width: 226px;
+    height: 29px;
+    margin-left: 178px;
+}
+.android{
+  width: 6px;
+  height: 6px;
+  padding: 11px 136px 13px 10px;
+  float: right;
+}
+.ios{
+  width: 6px;
+  height: 6px;
+  padding: 11px 68px 13px 0px;
+  float: left;
+}
+.active{
+  background: url(../img/gou2.png) no-repeat center top;
+}
+.grayBg{
+  background-color: lightGray;
+}
+.success{
+  width: 637px;
+  height: 302px;
+  z-index: 105;
+  background: url(../img/success.png) no-repeat center top;
+  position: fixed;
+  top: 390px;
+  left: 1px;
+}
+.closesuccess{
+  width: 31px;
+  height: 38px;
+  position: absolute;
+  right: 0px;
+  z-index: 103;
+}
+.fail{
+  width: 638px;
+  height: 346px;
+  z-index: 105;
+  background: url(../img/fail.png) no-repeat center top;
+  position: fixed;
+  top: 390px;
+  left: 1px;
+}
+.closefail{
+  width: 31px;
+  height: 38px;
+  position: absolute;
+  right: 33px;
+  z-index: 103;
+}
+a{
+  color: #fff;
+}
+.footer {
+  width: 600px;
+  margin-left: 20px;
+  font-size: 16px;
+  color: #fff;
+  /*margin-bottom: 20px;*/
+  margin-top: 772px;
+}
+.gainian{
+  width: 65px;
+  height: 76px;
+  position: absolute;
+   top: 527px;
+  left: 497px;
+}
+.video_play{
+    width: 65px;
+    height: 76px;
+    cursor: pointer;
+    display: inline-block;
+}
+.video_player{
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  height: 360px;
+  margin: -180px 0 0 -300px;
+  z-index: 101;
+}
+.video_close{
+  position: absolute;
+  left: 600px;
+  top: 10px;
+  cursor: pointer;
+  z-index: 102;
+}
+
+.isyuyue{
+  width: 180px;
+  margin: 0 auto;
+  font-size: 22px;
+  margin-top: -10px;
+  text-align: center;
+}
+
+.now {
+  position: absolute;
+  right: 56px;
+  top: 475px;
+}
+.top {
+  background: url("../img/top.png") no-repeat center top;
+  height: 125px;
+  width: 100%;
+  position: fixed;
+  z-index: 99
+}
+.backhome {
+  color: white;
+  width: 161px;
+  height: 48px;
+  font-size: 29px;
+  line-height: 48px;
+  text-align: center;
+  position: absolute;
+  right: 10px;
+  top:30px;
+  background: #bc1b17;
+  border-radius: 15px;
+}
+
+
+
+
+
+
+

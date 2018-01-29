@@ -1,0 +1,33 @@
+.back{
+  display: inline-block;
+  float: right;
+  color: #fff;
+  background-color: #aaaeb2;
+  width: 60px;
+  height: 30px;
+  line-height: 30px;
+  border-top-left-radius: 14px;
+  border-bottom-left-radius: 14px;
+  text-align: center;
+  font-size: 15px;
+}
+.content{
+  color: #3a3a3a;
+  width: 90%;
+  margin-left: 5%;
+}
+.content img{
+  max-width: 100%;
+}
+.article_title{
+  text-align: center;
+  font-size: 20px;
+  color: #3a3a3a;
+}
+.article_time{
+  text-align: center;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #6b6b6b;
+}

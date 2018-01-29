@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>《大圣归来棒指灵霄》官方网站-新国风正版授权动作手游</title>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta name="keywords" content="大圣归来,西游记之大圣归来,大圣归来手游,西游记之大圣归来手游,大圣归来手游官网,大圣归来棒指灵霄,大圣归来棒指灵霄官网，大圣归来礼包，大圣归来预约，悟空传,悟空传手游,西游,大圣,孙悟空,江流儿">
+  <meta name="description" content="《大圣归来棒指灵霄》是《大圣归来》动画电影正版授权改编的MMORPG手游，讲述了主角与少年唐僧、齐天大圣孙悟空等人结伴同行中发生的一连串精彩故事！战斗系统、打造系统、帮派系统等特色系统给玩家带来无穷的探索感，更有酷炫的“转职”玩法等你探索！三大职业，十二种玩法，绝对能让你体验全新的西游世界！">
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="css/common.css?v=2017.12.26">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <script type="text/javascript" src="js/common.js?v=2017.12.26"></script>
+  <script type="text/javascript" src="http://page.hulai.com/static/open/js/jquery.min.js"></script>
+  <script type="text/javascript" src="http://page.hulai.com/static/open/js/vue-2.1.8.min.js"></script>
+  <script type="text/javascript" src="//page.hulai.com/static/open/js/hulai-cms-0.0.1.js"></script>
+  <script type="text/javascript" src="js/swiper.min.js"></script>
+</head>
+<body>
+<div id="app" v-cloak>
+  <div class="part1">
+    <div class="top">
+      <a href="index.html" class="fl">
+        <img class="icon" src="img/icon.png">
+      </a>
+      <div class="text">
+        <span>大圣归来棒指灵霄</span>
+        <span>电影《大圣归来》正版授权</span>
+      </div>
+      <a href="../../../yuyue/m/index.html" class="yuyue_btn">
+        <img src="img/yuyue.png" class="w100">
+      </a>
+    </div>
+  </div>
+  <div class="part2" style="margin-top: 22%;">
+    <div class="lunbo_text">
+      <div class="lunbo">
+        <div class="swiper-container" style="width:100%;height:210px">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" v-for="(item,index) in lunboData">
+              <a :href="item.fields['跳转链接']">
+                <img :src="item.fields['图']" class="w100">
+              </a>
+            </div>
+          </div>
+          <div class="swiper-pagination" style="position: relative;top: -30px;text-align: right;"></div>
+        </div>
+      </div>
+    </div>
+    <!-- 列表 -->
+    <div class="infor">
+      <ul class="infor-ul">
+        <li @click="goGetJieshao('系统介绍')" :class="{ jieshao_act: xitong }">系统介绍</li>
+        <li @click="goGetJieshao('职业介绍')" :class="{ jieshao_act: zhiye }">职业介绍</li>
+        <li @click="goGetJieshao('特色系统')" :class="{ jieshao_act: tese }">特色系统</li>
+        <li @click="goGetJieshao('玩法介绍')" :class="{ jieshao_act: wanfa }">玩法介绍</li>
+      </ul>
+      <ul class="jieshao" style="margin-bottom: 0;">
+        <li v-for="item in jieshaoListData">
+          <a :href="item.hrefVal">
+            {{item.title}}
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <a href="index.html" class="more" style="margin-top: 20px;width: 110px;margin-left: -55px;font-size: 14px;">返回首页</a>
+  <div class="part3 mt10">
+    <div class="share">
+      <div class="fenlei fl" @click="showWechat()">
+        <img src="img/wechat.png">
+        <div class="share_text">
+          <span class="line" style="background-color: #c84845;"></span>
+          <span>微信公众号</span>
+          <span>dsglbzlx</span>
+        </div>
+      </div>
+      <div class="fenlei fr">
+        <a href="https://weibo.com/u/6188724300">
+          <img src="img/weibo.png">
+          <div class="share_text">
+            <span class="line"  style="background-color: #c84845;"></span>
+            <span>官方微博</span>
+            <span>大圣归来棒指灵霄手游</span>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="share">
+      <div class="fenlei fl" @click="showQQ()">
+        <img src="img/qq.png">
+        <div class="share_text">
+          <span class="line"  style="background-color: #c84845;"></span>
+          <span>官方QQ群</span>
+          <span>497459893</span>
+        </div>
+      </div>
+      <div class="fenlei fr">
+        <a href="https://tieba.baidu.com/f?kw=大圣归来棒指灵霄&ie=utf-8">
+          <img src="img/tieba.png">
+          <div class="share_text">
+            <span class="line"  style="background-color: #c84845;"></span>
+            <span>百度贴吧</span>
+            <span>大圣归来棒指灵霄</span>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="footer">
+      <p>
+        温馨提示：抵制不良游戏，拒绝盗版游戏，注意自我保护，谨防受骗上当，适度游戏益脑，沉迷游戏伤身，合理安排时间，享受健康生活
+        <br/> 本网站所有游戏仅适合于年满18周岁以上的用户。如果您未满18周岁，不建议您注册并使用本网络游戏服务；
+        如果您坚持使用，请您务必加入本网络游戏防沉迷系统进行实名注册，同时我们将会按照您法定监护人的需求提供您在本网络游戏中的信息。
+        您在使用本网络游戏服务之前已经明确知晓网络游戏可能给您带来的一切潜在威胁，包括长时间游戏可能不利于您的身心健康等。为了您的健康请您合理的使用本网络游戏。
+      </p>
+
+        京ICP备11034336号-1 |
+        <a target="_blank" href="http://www.hulai.com/assets/files/huai_wenwangwen.jpg">
+          <font>京网文[2011]0744-272号 |</font>
+        </a>
+        <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502033250">
+          <font><img src="http://www.beian.gov.cn/img/ghs.png">京公网安备 11010502033250号 |</font>
+        </a>
+        <a target="_blank" href="http://www.hulai.com/assets/files/huai_xukezheng.pdf">
+          <font>（总）网出证（京）字第095号 |</font>
+        </a>
+        <a href="#">
+          <font>ICP证书号:京B2-20171148</font>
+        </a>
+        <a target="_blank" href="http://www.hulai.com/server">服务协议 |</a>
+        <a target="_blank" href="http://www.hulai.com/privacy">隐私权保护声明 |</a>
+        <a target="_blank" href="http://www.hulai.com/minors">未成年人家长监护 |</a>
+        <a target="_blank" href="http://www.hulai.com/law">法律声明 |</a>
+        <a target="_blank" href="http://www.hulai.com/dispute">纠纷、投诉</a>
+        北京市石景山区八大处高科技园区西井路3号3号楼9229房间 010-62662622
+        Copyright © 2015 Hoolai Games. All Rights Reserved | 互爱互动（北京）科技有限公司版权所有
+    </div>
+  </div>
+
+  <div class="cover" v-show="showCover" @click="closeDialog()"></div>
+  <!-- qq弹框 -->
+  <img v-show="showqq" src="img/qqdialog.png" class="dialog_img">
+  <!-- 微信 -->
+  <img v-show="showVx" src="img/vxdialog.png" class="dialog_img">
+</div>
+<script type="text/javascript" src="js/gonglue.js?v=2017.12.26"></script>
+</body>
+</html>

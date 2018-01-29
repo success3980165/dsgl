@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>《大圣归来棒指灵霄》官方网站-新国风正版授权动作手游</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta name="keywords" content="大圣归来,西游记之大圣归来,大圣归来手游,西游记之大圣归来手游,大圣归来手游官网,大圣归来棒指灵霄,大圣归来棒指灵霄官网，大圣归来礼包，大圣归来预约，悟空传,悟空传手游,西游,大圣,孙悟空,江流儿">
+  <meta name="description" content="《大圣归来棒指灵霄》是《大圣归来》动画电影正版授权改编的MMORPG手游，讲述了主角与少年唐僧、齐天大圣孙悟空等人结伴同行中发生的一连串精彩故事!战斗系统、打造系统、帮派系统等特色系统给玩家带来无穷的探索感，更有酷炫的“转职”玩法等你探索！三大职业，十二种玩法，绝对能让你体验全新的西游世界！">
+  <link rel="stylesheet" type="text/css" href="css/index.css?v=20180105">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <script src="lib/jquery-3.2.1.min.js"></script>
+  <script src="js/common.js?v=20180105"></script>
+  <script type="text/javascript" src="//page.hulai.com/static/open/js/hulai-activity-0.0.1.js?v=20180118"></script>
+  <script type="text/javascript" src="//page.hulai.com/static/open/js/isMobile.min.js?v=20180118"></script>
+  <script type="text/javascript" src="//page.hulai.com/static/open/js/vue-2.1.8.min.js"></script>
+  <script type="text/javascript" src="//page.hulai.com/static/open/js/hulai-cms-0.0.1.js?v=20180118"></script>
+  <script type="text/javascript" src="components/index.js"></script>
+  <script src="lib/swiper.min.js"></script>
+  <script type="text/javascript">
+    if (isMobile.any) {
+      var goUrl = '/m/home';
+      var url = window.location.href;
+      var urlArr = url.split('?')
+      if (urlArr.length > 1) {
+        goUrl = goUrl + '?' + urlArr[1];
+      }
+      location.replace(goUrl);
+    }
+  </script>
+</head>
+<style>
+  html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper-container {
+      width: 100%;
+      height: 290px;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      /*background: #fff;*/
+      width: 497px !important;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-ite
+    }
+    .swiper-container-horizontal>.swiper-pagination-bullets {
+      bottom: 50px;
+      left: 134px;
+    }
+    .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px;
+      display: inline-block;
+      border-radius: 100%;
+      background: white;
+      opacity: 1;
+    }
+    .swiper-pagination-bullet-active {
+      background: #bc1b17;
+      width: 30px;
+      height: 8px;
+      border-radius: 4px;
+    }
+    [v-cloak] {
+      display: none;
+    }
+    .lunbo {
+      text-align: center;
+      font-size: 18px;
+      /*background: #fff;*/
+      width: 400px !important;
+      transform: translate3d(0px, 0px, -268px) rotateX(0deg) rotateY(0deg) !important;
+      z-index: 1;
+      transition-duration: 0ms;
+      /*margin-right: 60px;*/
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-ite;
+    }
+    .swiper-container-3d .swiper-slide-shadow-bottom, .swiper-container-3d .swiper-slide-shadow-left, .swiper-container-3d .swiper-slide-shadow-right, .swiper-container-3d .swiper-slide-shadow-top {
+      width: 0px;
+      height: 0px;
+    }
+    .swiper_lunbo {
+      width: 102%;
+      height: 376px;
+    }
+    .swiper-slide-prev{
+      /*width: 245px;
+      height: 330px;*/
+      transform: translate3d(0px, 0px, -268px) rotateX(0deg) rotateY(28deg) !important;
+    }
+    .swiper-slide-next{
+      /*width: 245px;
+      height: 330px;*/
+      transform: translate3d(0px, 0px, -268px) rotateX(0deg) rotateY(-28deg) !important;
+    }
+</style>
+<body>
+  <div id="app" v-cloak>
+    <hulai-header></hulai-header>
+    <div class="banner">
+      <div class="container">
+        <div class="container_top">
+          <div class="container_left">
+            <div class="swiper-container shouye_swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide" v-for="(item, index) in lunboArr">
+                    <a target="_top" :href="item.fields['跳转链接']" style="display:inline-block;width: 497px;margin-top:-31px;">
+                     <img :src="item.fields['图']" alt="" style="width: 479px;">
+                    </a>
+                    <p class="portal_title">{{item.title}}</p>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="container_right">
+            <ul class="title_nav">
+              <li :class="{'words':isChecked == 1}" @click="goGetList('最新',1,8)">
+                <p class="wordhight">最新</p>
+                <p :class="{'sanjiao':isChecked == 1}"></p>
+              </li>
+              <li :class="{'words':isChecked == 2}" @click="goGetList('新闻',1,8)">
+                <p class="wordhight">新闻</p>
+                <p :class="{'sanjiao':isChecked == 2}"></p>
+              </li>
+              <li :class="{'words':isChecked == 3}" @click="goGetList('攻略',1,8)">
+                <p class="wordhight">攻略</p>
+                <p :class="{'sanjiao':isChecked == 3}"></p>
+              </li>
+              <li :class="{'words':isChecked == 4}" @click="goGetList('公告',1,8)">
+                <p class="wordhight">公告</p>
+                <p :class="{'sanjiao':isChecked == 4}"></p>
+              </li>
+              <a :href="more_href"><img src="img/more.png" alt="" class="more"></a>
+            </ul>
+
+            <ul class="content">
+              <li v-for="item in listData" class="list_all">
+                <a target="_blank" :href="item.hrefVal">
+                  <span class="w400">
+                    <span><span>《</span>{{listName}}<span>》</span></span>
+                    <span class="bg_title">{{item.title}}</span>
+                  </span>
+                  <span class="fr_dis">{{item.updated}}</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="container_bottom">
+          <div class="container_prev">
+            <img src="img/pic.png" alt="">
+          </div>
+          <div class="container_next">
+            <ul class="next_top">
+              <li :class="{'cur':isZiLiaoChecked == 1}" @click="goGetZiLiao('系统介绍',1,8)" style="margin-left:23px;">系统介绍</li>
+              <li :class="{'cur':isZiLiaoChecked == 2}" @click="goGetZiLiao('职业介绍',1,8)">职业介绍</li>
+              <li :class="{'cur':isZiLiaoChecked == 3}" @click="goGetZiLiao('特色系统',1,8)">特色系统</li>
+              <li :class="{'cur':isZiLiaoChecked == 4}" @click="goGetZiLiao('玩法介绍',1,8)">玩法介绍</li>
+              <a href="gameraider.html"><img src="img/more.png" alt="" class="more"></a>
+            </ul>
+            <ul class="substance">
+              <li v-for="item in ziliaoData" class="ziliao_list_all">
+                <a target="_blank" :href="item.hrefVal">
+                  <span class="ziliao_w400">
+                    <!-- <span><span>【</span>{{listName}}<span>】</span></span> -->
+                    <span class="bg_title">{{item.title}}</span>
+                  </span>
+                  <!-- <span class="fr_dis">{{item.updated}}</span> -->
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mid">
+      <div class="portal">
+        <div class="swiper-container swiper_lunbo">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide t0 lunbo" onclick="clickCv()"><img src="img/sunwukong.png" alt="" style="width:100%" ></div>
+            <div class="swiper-slide t1 lunbo" onclick="qidai()"><a href="javascript:void(0)" style="width:100%;"><img src="img/xiaoheshang.png" alt="" style="width:100%"></a></div>
+            <div class="swiper-slide t2 lunbo" onclick="qidai()" style="margin-left: 5px;"><img src="img/zhubajie.png" alt="" style="width:100%" ></div>
+          </div>
+        </div>
+        <div class="swiper-button-next swiper-button-white" style="background-image: url(img/R.png?v=2017.10.23);width:45px;height:114px;background-size:45px 114px;top: 45%;right:-82px"></div>
+        <div class="swiper-button-prev swiper-button-white" style="background-image: url(img/L.png?v=2017.10.23);width:45px;height:114px;background-size:45px 114px;top: 45%;left:-82px;"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="basement">
+        <img src="img/cross.jpg" alt="" class="cross" onclick="crossAll()">
+        <div class="listen">
+          <div class="listen_content ey_w">
+            <ul class="ey_ul">
+              <li>
+                <a href="#"><img src="img/1.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="img/2.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="img/3.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="img/4.png" alt="" /></a>
+              </li>
+              <!-- <li>
+                <a href="#"><img src="img/5.png" alt="" /></a>
+              </li> -->
+            </ul>
+            <div class="next"></div>
+            <div class="prev"></div>
+          </div>
+        </div>
+      </div>
+      <div class="basement_two">
+        <img src="img/cross.jpg" alt="" class="cross" onclick="crossAll()">
+        <div class="libaoma">
+          <div class="libaoma_content">
+            <div class="libaoma_button">
+              <span class="ma">礼包码:</span>
+              <input type="text" class="txt1" value="XSASDASD1215ASD544">
+              <span class="copy" onclick="copytxt()">点击复制</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="last">
+      <div class="last_content">
+        <ul class="dtp" style="width:1020px;margin: 0px auto;margin-top: 100px;cursor: pointer;">
+          <li class="dtp1-1" style="width:580px; background:url('img/1010.jpg');height:320px;"><b class="img1" style="left:0px;position: relative;display:none"><img src="img/99.png" alt=""></b></li>
+          <li class="dtp1-2" style="width:95px;background:url('img/88.jpg');height:320px;"><b class="img2" style="left:0px;position: relative;"><img src="img/77.jpg" alt=""></b></li>
+          <li class="dtp1-3" style="width:95px;background:url('img/66.jpg');height:320px;"><b class="img3" style="left:0px;position: relative;"><img src="img/55.jpg" alt=""></b></li>
+          <li class="dtp1-4" style="width:95px;background:url('img/44.jpg');height:320px;"><b class="img4" style="left:0px;position: relative;"><img src="img/33.jpg" alt=""></b></li>
+          <li class="dtp1-5" style="width:95px;background:url('img/22.jpg');height:320px;"><b class="img5" style="left:0px;position: relative;"><img src="img/11.png" alt=""></b></li>
+        </ul>
+      </div>
+    </div>
+    <hulai-footer></hulai-footer>
+  </div>
+  <script type="text/javascript" src="js/animate.js?v=20180118"></script>
+  <script type="text/javascript" src="js/index_ctrl.js?v=20180118"></script>
+</body>
+</html>

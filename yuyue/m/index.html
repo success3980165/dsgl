@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>《大圣归来棒指灵霄》官方预约-新国风正版授权动作手游</title>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta name="keywords" content="大圣归来,西游记之大圣归来,大圣归来手游,西游记之大圣归来手游,大圣归来手游官网,大圣归来棒指灵霄,大圣归来棒指灵霄官网，大圣归来礼包，大圣归来预约，悟空传,悟空传手游,西游,大圣,孙悟空,江流儿">
+  <meta name="description" content="描述：《大圣归来棒指灵霄》是《大圣归来》动画电影正版授权改编的MMORPG手游，讲述了主角与少年唐僧、齐天大圣孙悟空等人结伴同行中发生的一连串精彩故事！
+  战斗系统、打造系统、帮派系统等特色系统给玩家带来无穷的探索感，更有酷炫的“转职”玩法等你探索！三大职业，十二种玩法，绝对能让你体验全新的西游世界！">
+
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=640,target-densitydpi=320, minimum-scale=0.5, maximum-scale=2,user-scalable=0">
+
+  <link rel="stylesheet" href="css/index.css?v=0.0.1">
+  <link rel="stylesheet" href="css/swiper.min.css">
+
+  <script type="text/javascript" src="http://s0.web.hulai.com/static/jquery/jquery-1.11.2.min.js"></script>
+  <script type="text/javascript" src="http://page.hulai.com/static/open/js/vue-2.1.8.min.js"></script>
+  <script type="text/javascript" src="//page.hulai.com/static/open/js/isMobile.min.js"></script>
+  <script type="text/javascript" src="//page.hulai.com/static/open/js/hulai-activity-0.0.1.js"></script>
+
+  <!-- 自动跳转 -->
+  <script type="text/javascript">
+    if (!isMobile.any) {
+      var goUrl = '../index.html';
+      var url = window.location.href;
+      var urlArr = url.split('?')
+      if (urlArr.length > 1) {
+        goUrl = goUrl + '?' + urlArr[1];
+      }
+      location.replace(goUrl);
+    }
+  </script>
+
+  <!-- 百度统计 -->
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?be321ad69985de46d112e3f1cf2a9f14";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+  <style type="text/css">
+    [v-cloak] {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app" v-cloak>
+    <div class="container">
+      <div class="top">
+        <div class="backhome">
+          <a href="/m/home/index.html" style="display: inline-block;width: 100%;height: 100%;">
+            <img src="img/enter_gw.png">
+          </a>
+        </div>
+      </div>
+      <!-- <div class="gainian"><a onclick="playVideo('http://cdn.dsgl.hulai.com/gongce/shichang/shipin/piantoushipin.mp4')" class="video_play"></a></div> -->
+      <!-- 视频内容播放 -->
+      <!-- <div class="video_player">
+        <img src="img/close_video.png?v=2017.10.24" class="video_close">
+        <video id="video" width="600" height="360" src="" controls="controls">
+        无法支持html5浏览器
+      </video>
+      </div> -->
+      <img src="img/now.png" alt="" class="now" onclick="naver()">
+      <div class="dialog">
+        <div class="yuyue_phone">
+          <div class="xitong">
+            <div class="ios" v-bind:class="{active: isIos}" @click="chooseXT('ios')"></div>
+            <div class="android" v-bind:class="{active: isAnd}" @click="chooseXT('android')"></div>
+          </div>
+          <input v-model="telephone" class="telephone" type="text" name="telephone" placeholder="请输入手机号码" onfocus="this.placeholder=''" onblur="this.placeholder='请输入手机号码'">
+          <div class="disf">
+            <input v-model="code" class="code" type="text" name="code" placeholder="请输入验证码" onfocus="this.placeholder=''" onblur="this.placeholder='请输入验证码'">
+            <input v-bind:disabled="isDisabled" v-model="smsCodeVal" @click="sendSms(this)" v-bind:class="{grayBg:isGrayBg}" type="button" class="yanzheng cursorP" name="name">
+          </div>
+          <div class="yyyx mt10 cursorP" @click="saveRecord()"></div>
+          <!-- <div class="isyuyue">已预约<span style="color:#ec0c26;">{{total}}</span>人</div> -->
+        </div>
+
+      <img src="img/dacheng.png" alt="" style="position: relative;top: 200px;left: 100px;" v-show="one">
+      <img src="img/dacheng.png" alt="" style="position: relative;top: 200px;left: 250px;" v-show="two">
+      <img src="img/dacheng.png" alt="" style="position: relative;top: 486px;left: -174px;" v-show="three">
+      <img src="img/dacheng.png" alt="" style="position: relative;top: 486px;left: -20px;" v-show="four">
+      </div>
+
+      <div class="footer">
+        <p>
+          温馨提示：抵制不良游戏，拒绝盗版游戏，注意自我保护，谨防受骗上当，适度游戏益脑，沉迷游戏伤身，合理安排时间，享受健康生活
+          <br/> 本网站所有游戏仅适合于年满18周岁以上的用户。如果您未满18周岁，不建议您注册并使用本网络游戏服务；
+          <br/> 如果您坚持使用，请您务必加入本网络游戏防沉迷系统进行实名注册，同时我们将会按照您法定监护人的需求提供您在本网络游戏中的信息。
+          <br/> 您在使用本网络游戏服务之前已经明确知晓网络游戏可能给您带来的一切潜在威胁，包括长时间游戏可能不利于您的身心健康等。为了您的健康请您合理的使用本网络游戏。
+        </p>
+
+        <p>京ICP备11034336号-1 |
+          <a target="_blank" href="/assets/files/huai_wenwangwen.jpg">
+            <font>京网文[2011]0744-272号 |</font>
+          </a>
+          <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502033250">
+            <font><img src="http://www.beian.gov.cn/img/ghs.png">京公网安备 11010502033250号 |</font>
+          </a>
+          <a target="_blank" href="/assets/files/huai_xukezheng.pdf">
+            <font>（总）网出证（京）字第095号 |</font>
+          </a>
+          <a href="#">
+            <font>ICP证书号:京B2-20171148</font>
+          </a>
+        </p>
+        <p>
+          <a class="c_white" target="_blank" href="http://www.hulai.com/server">服务协议 |</a>
+          <a class="c_white" target="_blank" href="http://www.hulai.com/privacy">隐私权保护声明 |</a>
+          <a class="c_white" target="_blank" href="http://www.hulai.com/minors">未成年人家长监护 |</a>
+          <a class="c_white" target="_blank" href="http://www.hulai.com/law">法律声明 |</a>
+          <a class="c_white" target="_blank" href="http://www.hulai.com/dispute">纠纷、投诉</a>
+        </p>
+        <p>
+          北京市石景山区八大处高科技园区西井路3号3号楼9229房间 010-62662622
+        </p>
+        <p>
+          Copyright © 2015 Hoolai Games. All Rights Reserved | 互爱互动（北京）科技有限公司版权所有
+        </p>
+
+      </div>
+    </div>
+    <!-- 蒙层 -->
+    <div id="cover" v-show="cover"></div>
+    <div id="cover2" v-show="cover2"></div>
+    <div class="success" v-show="success">
+      <div class="closesuccess" @click="closeSuccess()"></div>
+    </div>
+    <div class="fail" v-show="fail">
+      <div class="closefail" @click="closeFail"></div>
+    </div>
+  </div>
+  <script type="text/javascript" src="js/index.js?v=0.0.7"></script>
+  <script type="text/javascript" src="js/jquery-1.2.6.min.js"></script>
+  <script type="text/javascript">
+    function playVideo() {
+    $(".video_player").css("display", "block");
+    $(".cover").css("display", "block");
+    var myVideo = document.getElementById("video");
+    myVideo.play();
+  }
+  // 视频关闭
+  function closeVideo(){
+    $(".video_player").css("display", "none");
+    $(".cover").css("display", "none");
+    var myVideo = document.getElementById("media");
+    myVideo.pause();
+  }
+  </script>
+  <script type="text/javascript">
+    // 视频播放
+function playVideo(str) {
+  console.log(str);
+  $("#video").attr("src", str);
+
+  $(".video_player").css("display", "block");
+  $("#cover").css("display", "block");
+  var myVideo = document.getElementById("video");
+  myVideo.play();
+}
+
+$(function() {
+
+  $(".video_close").click(function() {
+    var myVideo = document.getElementById("video");
+    myVideo.pause();
+    $(".video_player").css("display", "none");
+    $("#cover").css("display", "none");
+  })
+
+  $(".infor_ul li").click(function() {
+    for (var a = 0; a < 4; a++) {
+      $(".infor_ul li").eq(a).removeClass("infor_act");
+    }
+    $(this).addClass("infor_act");
+
+  })
+})
+    </script>
+    <script type="text/javascript">
+      function naver() {
+        var maodian = $(".dialog").offsetTop;
+        return window.scrollTo(0, 736)
+      }
+    </script>
+</body>
+
+</html>

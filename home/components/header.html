@@ -1,0 +1,56 @@
+ <div>
+  <header>
+    <div class="head">
+      <ul class="nav">
+        <li><img src="img/logo.png" alt=""></li>
+        <a href="index.html">
+          <li class="linehight">
+            <p>官方首页</p>
+            <p class="small">HOME</p>
+          </li>
+        </a>
+        <a href="pclist.html?type=zuixin">
+          <li class="linehight">
+            <p>新闻资讯</p>
+            <p class="small">NEWS</p>
+          </li>
+        </a>
+        <a href="gameraider.html">
+          <li class="linehight gonglv">
+            <p>游戏资料</p>
+            <p class="small">RAIDERS</p>
+          </li>
+        </a>
+        <li class="linehight contact_us">
+          <p>联系我们</p>
+          <p class="small">CONTACT</p>
+        </li>
+      </ul> 
+    </div>
+    <div class="head_bottom">
+      <img src="img/contact.png" alt="">
+    </div>
+    <a href="javascript:void(0)" class="video"><img src="img/video.png" alt="" @click="clickVideo()"></a>
+    <div class="downloadBg">
+      <div class="smallbg">
+        <img src="img/erweima.png" alt="" class="erweima flex">
+        <div class="downmid flex">
+          <a href="../index.html"><img src="img/now.jpg" alt=""></a>
+        </div>
+        <div class="downright flex">
+          <img src="img/moviebg.png" alt="" @click="clickVideo()">
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- 遮罩层 -->
+  <div id="cover" v-show="cover"></div>
+  <!-- 视频内容播放 -->
+  <div class="video_player" v-show="video_play" >
+    <img src="img/close_video.png" class="video_close" @click="closeVideo()">
+    <video width="640" height="360" src="http://apk.dsgl.hulai.com/dsglfile/shipin/xuanchuanshipin1229.mp4" controls="controls">
+      无法支持html5浏览器
+    </video>
+  </div>
+</div>
+

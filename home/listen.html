@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/listen.css">
+  <script type="text/javascript" src="//page.hulai.com/static/open/js/hulai-activity-0.0.1.js?v=2017.10.24"></script>
+  <script type="text/javascript" src="//page.hulai.com/static/open/js/isMobile.min.js?v=2017.10.24"></script>
+  <script type="text/javascript" src="http://page.hulai.com/static/open/js/vue-2.1.8.min.js"></script>
+  <script type="text/javascript" src="//res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+  <script type="text/javascript" src="//page.hulai.com/static/open/js/hulai-cms-0.0.1.js?v=2017.10.24"></script>
+</head>
+<body>
+  <div id="app">
+    <div class="content">
+      <ul class="home">
+        <li class="guanwang">分享到:</li>
+        <li @click="erweima = !erweima"><img :src="weixin" @click="clickWx()" alt=""></li>
+        <li onclick="sharetoqq();"><img :src="qq" @mouseenter="clickQq()" @mouseleave="leaveQq()" alt=""></li>
+        <li onclick="shareWeibo();"><img :src="weibo" @mouseenter="clickWb()" @mouseleave="leaveWb()" alt=""></li>
+        <li onclick="shareQq();"><img :src="kongjian" @mouseenter="clickKj()" @mouseleave="leaveKj()" alt=""></li>
+      </ul>
+      <div class="share" v-show="erweima">
+        <img src="" alt="">
+      </div>
+      <iframe class="video" src="http://open.iqiyi.com/developer/player_js/coopPlayerIndex.html?vid=189fd000d3f9763ca37ca0748c68dad2&tvId=839631400&accessToken=2.f22860a2479ad60d8da7697274de9346&appKey=3955c3425820435e86d0f4cdfe56f5e7&appId=1368&height=100%&width=100%" frameborder="0" allowfullscreen="true" width="100%" height="100%"></iframe>
+      <p class="back"><a href="index.html">返回官网</a></p>
+      <div class="footer">
+        <p>
+          温馨提示：抵制不良游戏，拒绝盗版游戏，注意自我保护，谨防受骗上当，适度游戏益脑，沉迷游戏伤身，合理安排时间，享受健康生活
+          <br/> 本网站所有游戏仅适合于年满18周岁以上的用户。如果您未满18周岁，不建议您注册并使用本网络游戏服务；
+          <br/> 如果您坚持使用，请您务必加入本网络游戏防沉迷系统进行实名注册，同时我们将会按照您法定监护人的需求提供您在本网络游戏中的信息。
+          <br/> 您在使用本网络游戏服务之前已经明确知晓网络游戏可能给您带来的一切潜在威胁，包括长时间游戏可能不利于您的身心健康等。为了您的健康请您合理的使用本网络游戏。
+        </p>
+
+        <p>京ICP备11034336号-1 |
+          <a target="_blank" href="/assets/files/huai_wenwangwen.jpg">
+            <font>京网文[2011]0744-272号 |</font>
+          </a>
+          <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502033250">
+            <font><img src="http://www.beian.gov.cn/img/ghs.png">京公网安备 11010502033250号 |</font>
+          </a>
+          <a target="_blank" href="/assets/files/huai_xukezheng.pdf">
+            <font>（总）网出证（京）字第095号 |</font>
+          </a>
+          <a href="#">
+            <font>ICP证书号:京B2-20171148</font>
+          </a>
+        </p>
+        <p>
+          <a class="c_white" target="_blank" href="http://www.hulai.com/server">服务协议 |</a>
+          <a class="c_white" target="_blank" href="http://www.hulai.com/privacy">隐私权保护声明 |</a>
+          <a class="c_white" target="_blank" href="http://www.hulai.com/minors">未成年人家长监护 |</a>
+          <a class="c_white" target="_blank" href="http://www.hulai.com/law">法律声明 |</a>
+          <a class="c_white" target="_blank" href="http://www.hulai.com/dispute">纠纷、投诉</a>
+        </p>
+        <p>
+          北京市石景山区八大处高科技园区西井路3号3号楼9229房间 010-62662622
+        </p>
+        <p>
+          Copyright © 2015 Hoolai Games. All Rights Reserved | 互爱互动（北京）科技有限公司版权所有
+        </p>
+    </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="js/listen_ctrl.js"></script>
+  <script type="text/javascript">
+    var dsglActivityAPI = new hoolaiActivityAPI(24, true);
+    var shareData = {
+      title: '《大圣归来棒指灵霄》官方网站-新国风正版授权动作手游',
+      desc: '大圣归来棒指灵霄》是《大圣归来》动画电影正版授权改编的MMORPG手游，讲述了主角与少年唐僧、齐天大圣孙悟空等人结伴同行中发生的一连串精彩故事！战斗系统、打造系统、帮派系统等特色系统给玩家带来无穷的探索感，更有酷炫的“转职”玩法等你探索！三大职业，十二种玩法，绝对能让你体验全新的西游世界！',
+      link: location.href.split('#')[0],
+      imgUrl: 'http://dsgl.hulai.com/img/favicon.png'
+    };
+
+    wx.error(function(res) {
+      console.log("error");
+      console.log(res);
+    });
+    wx.ready(function() {
+      console.log("ready");
+      wx.onMenuShareTimeline(shareData);
+      wx.onMenuShareAppMessage(shareData);
+      wx.onMenuShareQQ(shareData);
+      wx.onMenuShareWeibo(shareData);
+    });
+    dsglActivityAPI.getWXShareConfig('dsgl',function(result) {
+      wx.config({
+        debug: false,
+        appId: result.appid,
+        timestamp: result.timestamp,
+        nonceStr: result.nonceStr,
+        signature: result.signature,
+        jsApiList: ["onMenuShareTimeline", "onMenuShareAppMessage", "onMenuShareQQ", "onMenuShareWeibo"]
+      });
+    })
+    //微博分享
+    function shareWeibo() {
+      var sharesinastring = 'http://v.t.sina.com.cn/share/share.php?title=' + shareData.title + '&url=' + shareData.link + '&content=utf-8&sourceUrl=' + shareData.desc + '&pic=' + shareData.imgUrl;
+      window.open(sharesinastring, 'newwindow', 'height=400,width=400,top=100,left=100');
+    }
+    //qq分享
+    function shareQq() {
+      var shareqqzonestring = 'http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?summary=' + shareData.title + '&url=' + shareData.link + '&pics=' + shareData.imgUrl;
+      window.open(shareqqzonestring, 'newwindow', 'height=400,width=400,top=100,left=100');
+    }
+    //空间分享
+    function sharetoqq(content, url, picurl) {
+      var shareqqstring = 'http://connect.qq.com/widget/shareqq/index.html?title=《大圣归来棒指灵霄》官方网站-新国风正版授权动作手游!&pics=http://dsgl.hulai.com/img/favicon.png' + shareData.title + '&url=' + shareData.link + '&pic=' + shareData.imgUrl;
+      window.open(shareqqstring, 'newwindow', 'height=400,width=400,top=100,left=100');
+    }
+    //二维码
+    $(".share").find("img").attr("src", "http://qr.liantu.com/api.php?text=" + window.location.href);
+  </script>
+</body>
+</html>

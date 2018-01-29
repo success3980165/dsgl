@@ -1,0 +1,73 @@
+*{
+  margin:0px;
+  padding:0px;
+}
+.content {
+  width: 100%;
+  background: url("../img/listen_bg.jpg") no-repeat center top;
+  height: 1054px;
+  text-align: center;
+}
+.video {
+  width: 1000px;
+  height: 562px;
+  margin:0px auto;
+  margin-top: 250px;
+}
+.back {
+  color:white;
+  width: 168px;
+  border: 1px solid white;
+  margin:0px auto;
+  margin-top: 50px;
+}
+.back a {
+  color: white;
+  text-decoration: none;
+}
+.home {
+  width: 400px;
+  height: 54px;
+  background: rgba(34,36,39,0.5);
+  position: absolute;
+  right: 0px;
+  top: 50px;
+  border-radius: 20px 0px 0px 20px;
+  list-style: none;
+}
+.home li {
+  float: left;
+  margin-top: 10px;
+  cursor: pointer;
+  margin-left: 17px;
+}
+.guanwang {
+  height: 30px;
+  line-height: 37px;
+  color: white;
+}
+.guanwang:hover {
+  background: white;
+  color: black;
+}
+.share {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  right: 170px;
+  top: 104px;
+}
+.share img {
+  width: 100%;
+}
+.footer {
+  color: #696969;
+  text-align: center;
+  padding:32px 0px 32px 0px;
+  margin-top: 160px;
+  background: #1d1e22;
+}
+.footer a {
+  color: #696969;
+  text-decoration: none;
+} 

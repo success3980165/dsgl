@@ -1,0 +1,376 @@
+#app{
+  width: 100%;
+  height: 983px;
+  background: url(../img/bg.jpg) no-repeat center top;
+  // background-color: #20110e;
+}
+// a {
+//   text-decoration:none;
+// }
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "SIMLI";
+}
+[v-cloak]{
+  display: none;
+}
+.bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+#cover{
+	position: fixed;
+  z-index: 100;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background-color: #000;
+}
+#cover2{
+  position: fixed;
+  z-index: 103;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background-color: #000;
+}
+#cover3{
+  position: fixed;
+  z-index: 103;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background-color: #000;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #aea39a; opacity:1;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #aea39a;opacity:1;
+}
+
+input:-ms-input-placeholder{
+    color: #aea39a;opacity:1;
+}
+
+input::-webkit-input-placeholder{
+    color: #aea39a;opacity:1;
+}
+input[type="button"]{
+	-webkit-appearance: none;
+}
+a{
+  color: #634847;
+}
+.main{
+    width: 748px;
+    height: 64px;
+    margin: 0 auto;
+    padding-top: 669px;
+    position: relative;
+}
+.yuyue{
+  width: 480px;
+  height: 136px;
+  background:rgba(255,255,255,0.6);
+  float: left;
+  cursor: pointer;
+  position: absolute;
+  top: 603px;
+  left: -37px;
+  display: flex;
+}
+.yuyue img {
+  flex:1;
+  width: 100%;
+  padding: 5px;
+}
+.nowyuyue {
+  width: 185px;
+  height: 120px;
+  background: url("../img/nowyuyue.jpg") no-repeat top center;
+  margin-top: 10px;
+}
+.biggifts {
+  width: 1000px;
+  height: 212px;
+  margin:0px auto;
+  background: url("../img/dalibao.png") no-repeat top center;
+  margin-top:37px;
+  text-align: right;
+  position: relative;
+  // top: 252px;
+  z-index: 9;
+}
+.backhome {
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  top: 100px;
+  right: 15%;
+  // background: white;
+  // font-size: 24px;
+  // text-align: center;
+  // line-height: 50px;
+  // color:  #bb1b17;
+  text-decoration: none;
+  cursor: pointer;
+  // border: 2px solid #bb1b17;
+  z-index: 99;
+  background: url("../img/gohome.jpg") no-repeat center top;
+}
+.backhome:hover {
+  // background: #bb1b17;
+  color: white;
+  border:none;
+  background: url("../img/gotohome.jpg") no-repeat center top;
+  width: 200px;
+  height: 50px;
+  font-size: 0px;
+}
+.isyuyue {
+  font-size: 18px;
+  // text-shadow:2PX 2PX 2PX #FFFFFF;
+  font-weight: 900;
+  position: absolute;
+  top: 684px;
+  left: 146px;
+  color:#ffdbc8;
+}
+.gainian{
+  width: 255px;
+  height: 64px;
+  background: url(../img/gainian.png) no-repeat center top;
+  float: right;
+}
+.dialog{
+  background: url(../img/dialog.png) no-repeat center top;
+  z-index: 105;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 1024px;
+  height: 569px;
+  margin: -284.5px 0 0 -512px;
+}
+.close{
+  width: 48px;
+  height: 50px;
+  position: absolute;
+  top: 23px;
+  left: 769px;
+  z-index: 103;
+}
+.left{
+    width: 38px;
+    height: 55px;
+    position: absolute;
+    top: 299px;
+    left: 62px;
+    z-index: 103;
+}
+.right{
+    width: 38px;
+    height: 55px;
+    position: absolute;
+    top: 302px;
+    left: 477px;
+    z-index: 103;
+}
+.lei{
+  background: url(../img/lei.png) no-repeat center top;
+  width: 565px;
+  height: 471px;
+  margin-top: 38px;
+  margin-left: 46px;
+}
+.mu{
+  background: url(../img/mu.png) no-repeat center top;
+  width: 565px;
+  height: 471px;
+  margin-top: 77px;
+  margin-left: 46px;
+}
+.yuyue_phone{
+  width: 435px;
+  margin: 0 auto;
+  margin-top: 169px;
+
+}
+.telephone{
+  background: url(../img/phone.png) no-repeat center top;
+  width: 400px;
+  height: 49px;
+  font-size: 18px;
+  border: none;
+  text-align: center;
+  outline: none;
+  color: #aea39a;
+  margin-top: 40px;
+  margin-left: 25px;
+}
+.code{
+  background: url(../img/yanzhengma.png) no-repeat center top;
+  width: 267px;
+  height: 49px;
+  font-size: 18px;
+  text-align: center;
+  outline: none;
+  color: #aea39a;
+  border: none;
+  margin-top: 15px;
+  margin-left: 25px;
+}
+.yanzheng{
+  background: url(../img/huoqu.png) no-repeat center top;
+  width: 124px;
+  height: 49px;
+  margin-left: 10px;
+  margin-top: 10px;
+  color: #8c7129;
+  font-size: 18px;
+  outline: none;
+  text-align: center;
+  border: none;
+}
+.yyyx{
+    background: url(../img/button.png) no-repeat center top;
+    width: 432px;
+    height: 68px;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    margin-top: 29px;
+    cursor: pointer;
+}
+.disf{
+    width: 224px;
+    float: right;
+    margin-top: -8px;
+    margin-right: 10px;
+}
+.android{
+  width: 6px;
+  height: 6px;
+  float: right;
+  padding: 16px 80px 15px 6px;
+  cursor: pointer;
+}
+.ios{
+  width: 6px;
+  height: 6px;
+  padding: 16px 80px 15px 6px;
+  float: left;
+  cursor: pointer;
+}
+.active{
+  background: url(../img/gou2.png) no-repeat center top;
+}
+.success{
+    width: 960px;
+    height: 477px;
+    z-index: 105;
+    background: url(../img/success.png) no-repeat center top;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: -238.5px 0 0 -480px;
+}
+.closesuccess{
+    width: 45px;
+    height: 47px;
+    position: absolute;
+    top: 19px;
+    left: 922px;
+    z-index: 103;
+    cursor: pointer;
+}
+.fail{
+ width: 960px;
+  height: 477px;
+  z-index: 105;
+  background: url(../img/fail.png) no-repeat center top;
+  position: fixed;
+  top: 50%;
+  left: 52%;
+  margin: -238.5px 0 0 -480px;
+}
+.closefail{
+  width: 45px;
+  height: 47px;
+  position: absolute;
+  top: 0px;
+  left: 784px;
+  z-index: 103;
+  cursor: pointer;
+}
+.footer {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 12px;
+  color: #634847;
+  height: 252px;
+  padding: 20px 0px 20px 0px;
+  // margin-top: 248px;
+  background: #1d1e22;
+}
+.footer p{
+  text-align: center;
+}
+.footer a {
+  text-decoration:none;
+}
+.vodeo{
+  float: left;
+}
+#cover{
+  position: fixed;
+  z-index: 100;
+  top: 0px;
+  left: 0px;
+  display: none;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background-color: #000;
+}
+.video_play{
+    width: 82px;
+    height: 82px;
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    top: 330px;
+    left: 50%;
+    margin-left: 35px;
+}
+.video_player{
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 1200px;
+  height: 560px;
+  margin: -280px 0 0 -600px;
+  z-index: 101;
+}
+.video_close{
+  position: absolute;
+  left: 1210px;
+  top: 10px;
+  cursor: pointer;
+  z-index: 102;
+}

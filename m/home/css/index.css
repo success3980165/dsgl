@@ -1,0 +1,62 @@
+.play{
+  position: absolute;
+  right: 7%;
+  top: 51%;
+  width: 42px;
+}
+.video_player{
+  z-index: 100;
+  position: fixed;
+  top: 100px;
+  width: 100%;
+  /*display: none;*/
+}
+.video_close{
+  float: right;
+  z-index: 110;
+  width: 50px;
+  height: 50px;
+}
+
+.cv{
+  width: 94%;
+  margin-left: 3%;
+}
+.chakan{
+  display: inline-block;
+  width: 30%;
+  position: relative;
+  top: -40px;
+  left: 35%;
+}
+.tese {
+  width: 94%;
+  margin-left: 3%;
+  margin-top: 20px;
+}
+.tese .swiper-slide, .tese .swiper-slide-active {
+  will-change: transform;
+  width: 250px;
+  height: 400px;
+}
+.tese .t0 {
+  background-image: url(../img/lunbo1.jpg);
+}
+.tese .t1 {
+  background-image: url(../img/lunbo2.jpg);
+}
+.tese .t2 {
+  background-image: url(../img/lunbo3.jpg);
+}
+.tese .t3 {
+  background-image: url(../img/lunbo4.jpg);
+}
+.tese .t4 {
+  background-image: url(../img/lunbo5.jpg);
+}
+.tese .swiper-slide {
+  /*width: 5rem;*/
+  /*height: 8.88rem;*/
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>《大圣归来棒指灵霄》官方网站-新国风正版授权动作手游</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta name="keywords" content="大圣归来,西游记之大圣归来,大圣归来手游,西游记之大圣归来手游,大圣归来手游官网,大圣归来棒指灵霄,大圣归来棒指灵霄官网，大圣归来礼包，大圣归来预约，悟空传,悟空传手游,西游,大圣,孙悟空,江流儿">
+  <meta name="description" content="《大圣归来棒指灵霄》是《大圣归来》动画电影正版授权改编的MMORPG手游，讲述了主角与少年唐僧、齐天大圣孙悟空等人结伴同行中发生的一连串精彩故事!战斗系统、打造系统、帮派系统等特色系统给玩家带来无穷的探索感，更有酷炫的“转职”玩法等你探索！三大职业，十二种玩法，绝对能让你体验全新的西游世界！">
+  <script src="lib/jquery-3.2.1.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/gameraider.css">
+  <script src="js/common.js?v=20180118"></script>
+  <script type="text/javascript" src="//page.hulai.com/static/open/js/hulai-activity-0.0.1.js?v=20180118"></script>
+  <script type="text/javascript" src="//page.hulai.com/static/open/js/isMobile.min.js?v=20180118"></script>
+  <script type="text/javascript" src="//page.hulai.com/static/open/js/vue-2.1.8.min.js"></script>
+  <script type="text/javascript" src="//page.hulai.com/static/open/js/hulai-cms-0.0.1.js?v=20180118"></script>
+  <script type="text/javascript" src="components/index.js"></script>
+</head>
+<body>
+  <div id="app">
+    <hulai-seheader></hulai-seheader>
+    <div class="mid">
+      <ul class="mid_left">
+        <li><a href="javascript:void(0)"><img src="img/download.png" alt=""></a></li>
+        <li><a href="javascript:void(0)"><img src="img/erweima.png" alt="" style="width:180px;"></a></li>
+        <li><a href="javascript:void(0)"><img src="img/and.png" alt=""></a></li>
+        <li><a href="javascript:void(0)"><img src="img/ios.png" alt=""></a></li>
+      </ul>
+      <div class="mid_right">
+        <div class="nav_title">
+          <p class="big_title">游戏资料</p>
+          <p class="right_title">当前位置：返回首页 游戏资料</p>
+        </div>
+        <div class="content">
+          <div class="game_top">
+            <div class="jieshao">
+              <p class="red">系统介绍</p>
+              <ul class="substance">
+                <li v-for="item in ziliaoData" class="ziliao_list_all">
+                  <a target="_blank" :href="item.hrefVal">
+                    <span class="ziliao_w400">
+                      <span class="bg_title">{{item.title}}</span>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="game_mid">
+            <div class="jieshao">
+              <p class="red">职业介绍</p>
+              <ul class="substance">
+                <li v-for="item in zhiyeData" class="ziliao_list_all">
+                  <a target="_blank" :href="item.hrefVal">
+                    <span class="ziliao_w400">
+                      <span class="bg_title">{{item.title}}</span>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="game_last">
+            <div class="jieshao">
+              <p class="red">特色介绍</p>
+              <ul class="substance">
+                <li v-for="item in teseData" class="ziliao_list_all">
+                  <a target="_blank" :href="item.hrefVal">
+                    <span class="ziliao_w400">
+                      <span class="bg_title">{{item.title}}</span>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <hulai-footer></hulai-footer>
+  </div>
+
+  <script type="text/javascript" src="js/gameraider_ctrl.js?v=20180118"></script>
+  <script type="text/javascript" src="js/animate.js?v=20180118"></script>
+</body>
+</html>
